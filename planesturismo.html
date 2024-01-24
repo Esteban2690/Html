@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia de turismo</title>
+</head>
+
+<body>
+    <hr>
+    <a href="./index.html">Inicio</a>
+    <a href="./index1.html">Inicio</a>
+    <a href="./Catalogo.html">Catalogo</a>
+    <a href="./aboutus.html">¿Quienes somos?</a>
+    <a href="./values.html">Valores</a>
+    <a href="./contactus.html">Contactenos</a>
+    <a href="./contactues.html">Contactanos</a>
+    <a href="./planesturismo.hmtl">planesturismo</a>
+    <hr>
+    <table align="center">
+        <caption> Planes de turismo</caption>
+        <form>
+            <tr>
+                <td>
+                    <label for="full name">Nombre completo</label>
+                </td>
+                <td>
+                    <input type="text" required autofocus autocomplete="off" id="fullname" name="fullname"
+                        placeholder="Ingrese Nombre completo" maxlength="30" minlength="3" pattern="(/^[a-zA-Z\s]+$/)"
+                        title="ingrese solo letras y/o espacios de minimo 7 maximo 30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Correo electronico</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="Ingrese Correo electronico" size="20"
+                        maxlength="50" minlength="7" title="Ingrese caracteres validos para el correo">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="target">Destino</label>
+                </td>
+                <td>
+                    <select name="target" id="target">
+                        <option value="none">Seleccione un destino</option>
+                        <option value="santamarta">Santa Marta</option>
+                        <option value="cartagena">Cartagena</option>
+                        <option value="medeallin">Medellín</option>
+                        <option value="bogota">Bogota</option>
+                        <option value="barranquilla">Barranquilla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="departuredate">Fecha Salida</label>
+                </td>
+                <td> <input type="date" id="departuredate" name="departuredate" min="2024-01-17" max="2024-06-30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="departuredate">Fecha Regreso</label>
+                </td>
+                <td> <input type="date" id="returndate" name="returnndate" min="2024-01-17" max="2024-01-31">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="numberofpeople">Numero de personas</label>
+                </td>
+                <td>
+                    <input type="number" name="numberofpeople" id="numberofpeople" min="1" max="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="waytopay">Forma de pago</label>
+                </td>
+                <td>
+                    <input type="radio" name="waytopay" id="cash"> Efectivo <br>
+                    <input type="radio" name="waytopay" id="debitcard">Tarjeta de dedito <br>
+                    <input type="radio" name="waytopay" id="creditcard">Tarjeta de credito
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Enviar">
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <button center="align" type="submit" id="send" name="send" placeholder="Limpiar"> Limpiar</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
